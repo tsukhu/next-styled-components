@@ -3,7 +3,7 @@ import Link from "../Link/Link";
 import { FaMagento } from "react-icons/fa";
 import { Container } from "../../globalStyles";
 export const Nav = styled.nav`
-  background: #101522;
+  background: ${(props) => props.theme.colors.main};
   height: 80px;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-  color: #fff;
+  color: ${(props) => props.theme.colors.white};
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -64,7 +64,7 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #101522;
+    background: ${(props) => props.theme.colors.main};
   }
 `;
 
@@ -72,7 +72,7 @@ export const NavItem = styled.li`
   height: 80px;
   border-bottom: 2px solid transparent;
   &:hover {
-    border-bottom: 2px solid #4b59f7;
+    border-bottom: 2px solid ${(props) => props.theme.colors.primary};
   }
 
   @media screen and (max-width: 960px) {
@@ -85,7 +85,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #fff;
+  color: ${(props) => props.theme.colors.white};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -100,7 +100,7 @@ export const NavLinks = styled(Link)`
     display: table;
 
     &:hover {
-      color: #4b59f7;
+      color: ${(props) => props.theme.colors.primary};
       transition: all 0.3s ease;
     }
   }
