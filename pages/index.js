@@ -1,11 +1,12 @@
-import { Layout, InfoSection } from "../components";
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from "../data";
+import { Layout, InfoSection, PricingSection } from "../components";
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from "./data";
 export default function Home() {
   return (
     <Layout>
       <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />
+      <InfoSection {...homeObjTwo} />
+      <PricingSection />
       <InfoSection {...homeObjFour} />
     </Layout>
   );
