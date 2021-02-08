@@ -1,6 +1,5 @@
 import { Layout, InfoSection, PricingSection } from "../../components";
-import { homeObjOne, homeObjThree } from "./data";
-export default function Services() {
+export default function Services({ homeObjOne, homeObjThree }) {
   return (
     <Layout>
       <PricingSection />
@@ -9,3 +8,15 @@ export default function Services() {
     </Layout>
   );
 }
+
+export const getStaticProps = async () => {
+  const res = await fetch("http://localhost:3000/api/data");
+  const data = await res.json();
+  const { homeObjOne, homeObjThree } = data;
+  return {
+    props: {
+      homeObjOne,
+      homeObjThree
+    }
+  };
+};

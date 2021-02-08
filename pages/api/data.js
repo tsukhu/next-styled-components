@@ -66,3 +66,7 @@ export const homeObjFour = {
   alt: "Vault",
   start: "true"
 };
+
+export default function handler(req, res) {
+  res.status(200).json({ homeObjOne, homeObjTwo, homeObjThree, homeObjFour });
+}
