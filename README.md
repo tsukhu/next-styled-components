@@ -9,6 +9,7 @@ This is a NextJS version of the Responsive React Site created by [Brian](https:/
 - Mapping to NextJS page structure
 - Layout Based Pages
 - Overall mapped the solution to work with NextJS
+- NextJS API for mock data for the pages
 
 This example features how you use a different styling solution than [styled-jsx](https://github.com/zeit/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
 
