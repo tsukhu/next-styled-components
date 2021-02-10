@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { FaMagento } from "react-icons/fa";
-import Link from "../Link/Link";
 export const FooterContainer = styled.div`
   background-color: ${(props) => props.theme.colors.main};
   padding: 4rem 0 2rem 0;
@@ -97,7 +96,7 @@ export const FooterLinkTitle = styled.h2`
   margin-bottom: 16px;
 `;
 
-export const FooterLink = styled(Link)`
+export const FooterLink = styled.a`
   color: ${(props) => props.theme.colors.white};
   text-decoration: none;
   margin-bottom: 0.5rem;
@@ -124,7 +123,7 @@ export const SocialMediaWrap = styled.div`
   }
 `;
 
-export const SocialLogo = styled(Link)`
+export const SocialLogo = styled.a`
   color: ${(props) => props.theme.colors.white};
   justify-self: start;
   cursor: pointer;

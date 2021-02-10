@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Link from "../Link/Link";
 
 export const PricingSection = styled.div`
   padding: 100px 0 160px;
@@ -41,7 +40,7 @@ export const PricingContainer = styled.div`
   }
 `;
 
-export const PricingCard = styled(Link)`
+export const PricingCard = styled.a`
   background: ${(props) => props.theme.colors.grayDark};
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
   width: 280px;

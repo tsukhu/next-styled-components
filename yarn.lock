@@ -181,6 +181,33 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@bit/tsukhu.ultra.button@0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/tsukhu.ultra.button/-/tsukhu.ultra.button-0.0.1.tgz#9d6921e767972f18d7bb008c310820a4a779c50f"
+  integrity sha1-nWkh52eXLxjXuwCMMQggpKd5xQ8=
+  dependencies:
+    styled-components "5.2.1"
+
+"@bit/tsukhu.ultra.footer@^0.0.3":
+  version "0.0.3"
+  resolved "https://node.bit.dev/tsukhu.ultra.footer/-/tsukhu.ultra.footer-0.0.3.tgz#2b412fd8fa101d7b576adf57c20c89ca9b265c08"
+  integrity sha1-K0Ev2PoQHXtXat9XwgyJypsmXAg=
+  dependencies:
+    "@bit/tsukhu.ultra.button" "0.0.1"
+    react "17.0.1"
+    react-icons "4.1.0"
+    styled-components "5.2.1"
+
+"@bit/tsukhu.ultra.pricing@^0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/tsukhu.ultra.pricing/-/tsukhu.ultra.pricing-0.0.1.tgz#4ffbdc7fd42a21c6b7c4fefd71fe186650793f8f"
+  integrity sha1-T/vcf9QqIca3xP79cf4YZlB5P48=
+  dependencies:
+    "@bit/tsukhu.ultra.button" "0.0.1"
+    react "17.0.1"
+    react-icons "4.1.0"
+    styled-components "5.2.1"
+
 "@emotion/is-prop-valid@^0.8.8":
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"

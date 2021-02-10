@@ -1,4 +1,5 @@
-import { Layout, InfoSection, PricingSection } from "../../components";
+import { Layout, InfoSection } from "../../components";
+import { Pricing as PricingSection } from "@bit/tsukhu.ultra.pricing";
 export default function Services({ homeObjOne, homeObjThree }) {
   return (
     <Layout>
@@ -16,7 +17,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       homeObjOne,
-      homeObjThree
-    }
+      homeObjThree,
+    },
   };
 };
